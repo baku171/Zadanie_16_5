@@ -5,7 +5,7 @@ const Title = props => {
     return (
         <div className={style.Title}>
             <h1>{props.title}</h1>
-            <h3>Liczba zadań: {props.number}</h3>
+            <h3>Number of tasks: {props.number}</h3>
         </div>
     );
 }

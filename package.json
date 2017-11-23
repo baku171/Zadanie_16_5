@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cross-env NODE_ENV=production webpack"
+    "build": "cross-env NODE_ENV=development webpack",
+    "start": "webpack-dev-server --inline --hot --config ./webpack.config.js"
   },
   "keywords": [
     "Webpack"
@@ -23,9 +24,11 @@
     "optimize-js-plugin": "0.0.4",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
+    "react-hot-loader": "^3.0.0-beta.6",
     "style-loader": "^0.19.0",
     "uglifyjs-webpack-plugin": "^1.1.0",
-    "webpack": "^3.8.1"
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
   },
   "dependencies": {
     "uuid": "^3.1.0"
